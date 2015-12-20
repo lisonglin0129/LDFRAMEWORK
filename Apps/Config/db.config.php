@@ -1,0 +1,1 @@
+<?php 	/**	*	*数据库配置文件不要删除	*/	$dbconfig=array(		'dbhost'	=>	'127.0.0.1',		//数据库IP		'dbuser'	=>	'root',		//数据库用户名		'dbpassword'	=>	'',		//数据库密码		'dbcharset'	=>	'utf-8',		//数据库字符		'dbport'		=>	'3306',		//数据库端口		'dbname'	=>	'zhongzi',		//数据库名	);?>

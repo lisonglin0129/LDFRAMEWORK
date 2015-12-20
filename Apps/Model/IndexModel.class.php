@@ -1,0 +1,1 @@
+<?php/*****/namespace Model;use Model\IndexModel;class IndexModel extends Model{	public function __construct(){		$this->database=''; 			//这个是数据库名		$this->table=''; 			//这个是数据表	}	public function index(){	}}?>

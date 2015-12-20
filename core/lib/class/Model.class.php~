@@ -1,0 +1,10 @@
+<?php
+	namespace Model;
+	use Model\Model;
+	class Model extends mysql{
+		public function __construct(){
+		      parent::__construct();
+		}
+	}
+
+?>
