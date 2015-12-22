@@ -29,18 +29,19 @@ defined("DB_FILE_NAME") 	or define("DB_FILE_NAME","db.config.php");   	      	/*
 defined("SOURCE_PATH") 	or define("SOURCE_PATH",str_replace($_SERVER['DOCUMENT_ROOT'], "", APP_PATH)."/".VIEWDIR);
 
 define('NOW_TIME',      		$_SERVER['REQUEST_TIME']);
-define('REQUEST_METHOD',	$_SERVER['REQUEST_METHOD']);
-define('IS_GET',        		REQUEST_METHOD =='GET' ? true : false);
-define('IS_POST',       		REQUEST_METHOD =='POST' ? true : false);
-define('IS_PUT',        		REQUEST_METHOD =='PUT' ? true : false);
-define('IS_DELETE',    		REQUEST_METHOD =='DELETE' ? true : false);
+//define('REQUEST_METHOD',	$_SERVER['REQUEST_METHOD']);
+//define('IS_GET',        		REQUEST_METHOD =='GET' ? true : false);
+//define('IS_POST',       		REQUEST_METHOD =='POST' ? true : false);
+//define('IS_PUT',        		REQUEST_METHOD =='PUT' ? true : false);
+//define('IS_DELETE',    		REQUEST_METHOD =='DELETE' ? true : false);
 
-session_start();
-header("Content-type:text/html;charset=".CHARSET);
+//session_start();
+//header("Content-type:text/html;charset=".CHARSET);
 
 /* 导入配置 */
 require_once ROOT_PATH.STRUTS_PATH	.	"/lib/class/AddFunction.class.php";
 require_once ROOT_PATH.STRUTS_PATH	.	"/lib/class/Config.class.php"; //导入配置文件
+
 require_once ROOT_PATH.STRUTS_PATH	.	"/lib/class/init.class.php";
 require_once ROOT_PATH.STRUTS_PATH	.	"/lib/class/ModelDriver.class.php"; 	
 require_once ROOT_PATH.STRUTS_PATH	.	"/lib/data/data.php"; 

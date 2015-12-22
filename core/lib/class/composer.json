@@ -1,0 +1,33 @@
+{
+    "name"  : "Lisognlin",
+    "type"  : "project",
+    "keywords": ["event-loop", "asynchronous"],
+    "homepage": "http://www.hbcln.com",
+    "license" : "MIT",
+    "description": "An asynchronous event driven PHP framework for easily building fast, scalable network applications.",
+    "authors" : [
+        {
+            "name"      : "Lisognlin",
+            "email"     : "lisonglin0123@sina.cn",
+            "homepage"  : "http://www.hbcln.com",	
+            "role": "Developer"
+        }
+    ],
+    "support" : {
+        "email" : "lisonglin0123@sina.cn",
+        "issues": "http://www.hbcln.com",
+        "forum" : "http://www.hbcln.com",
+        "wiki"  : "http://www.hbcln.com",
+        "source": "http://www.hbcln.com"
+    },
+    "require": {
+        "php": ">=5.3"
+    },
+    "suggest": {
+	"ext-libevent": "For better performance."
+    },
+    "autoload": {
+        "psr-4": {"Lisonglin\\": "./"}
+    },
+    "minimum-stability":"dev"
+}

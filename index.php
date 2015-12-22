@@ -9,4 +9,7 @@
     define("DEBUG",true);
     define("APP_NAME","Apps");
     require 'core/init.php';  //就是如此简单
+
+    
+
   

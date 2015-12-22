@@ -13,7 +13,7 @@
 	     	    $act_class = "\\Action\\".str_replace("action","Action", $act_class);
 	     	    require_once $act;
 	     	    $act_obj = new $act_class;
-	     	    $f = $this->A;
+	     	    $f =(string) $this->A;
 	     	    $tm = get_class_methods($act_obj);
 	     	    if(!in_array($f,$tm)){
 	     	    	if(DEBUG){
@@ -60,6 +60,7 @@
 	     }
 
 	     public function is_class(){
+	     	$param = getopt('c:c:a:');
 	   	if(isset($_SERVER['PATH_INFO'])){
 	   		$g = explode("/",$_SERVER['PATH_INFO']);
 	   		$this->C  =  isset($g[1])?$g[1]:"Index";
@@ -70,7 +71,11 @@
 		   	$this->M = isset($_GET['m'])?$_GET['m']:'index';
 		   	$this->A =  isset($_GET['a'])?$_GET['a']:'index';		
 	   	}
-	   	
+	   	if($param){
+	   		$this->C =  isset($param['c'])?$param['c']:"index";
+		   	$this->M = isset($param['m'])?$param['m']:'index';
+		   	$this->A =  isset($param['a'])?$param['a']:'index';
+	     	}
 	     	$this->LoadModel();
 	     	$this->LoadAction();
 	     }
